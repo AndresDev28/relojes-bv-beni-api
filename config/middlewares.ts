@@ -6,24 +6,23 @@ export default [
     name: "strapi::security",
     config: {
       contentSecurityPolicy: {
-        useDefaults: true,
+        useDefaults: true, // Empieza con la configuración por defecto
         directives: {
-          "connect-src": ["'self'", "https"],
+          // Asegúrate de que los valores aquí sean arrays de strings
           "img-src": [
             "'self'",
             "data:",
             "blob:",
-            "market-assets.strapi.io", // Necesario para las imágenes del marketplace
-            "relojes-bv-beni-api.onrender.com", // <-- TU DOMINIO DE RENDER
+            "market-assets.strapi.io",
+            "relojes-bv-beni-api.onrender.com",
           ],
           "media-src": [
             "'self'",
             "data:",
             "blob:",
             "market-assets.strapi.io",
-            "relojes-bv-beni-api.onrender.com", // <-- TU DOMINIO DE RENDER
+            "relojes-bv-beni-api.onrender.com",
           ],
-          upgradeInsecureRequests: null,
         },
       },
     },
