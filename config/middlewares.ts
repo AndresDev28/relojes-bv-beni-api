@@ -15,6 +15,7 @@ export default [
             "blob:",
             "market-assets.strapi.io",
             "relojes-bv-beni-api.onrender.com",
+            "res.cloudinary.com",
           ],
           "media-src": [
             "'self'",
@@ -22,6 +23,7 @@ export default [
             "blob:",
             "market-assets.strapi.io",
             "relojes-bv-beni-api.onrender.com",
+            "res.cloudinary.com",
           ],
         },
       },
